@@ -17,5 +17,10 @@ export function CountDown() {
     return () => clearInterval(intervalId);
   }, [updateFrequencyInMilliseconds]);
 
-  return <>{count}</>;
+  const formatNumberWithDot = (number) => {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+  };
+
+  const formattedCount = formatNumberWithDot(count);
+  return <>{formattedCount}</>;
 }
