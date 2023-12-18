@@ -1,0 +1,20 @@
+@import "../../styles/variables.scss";
+
+.extensions {
+  padding-bottom: 110px;
+  margin-top: 80px;
+}
+
+@media screen and (min-width: $mobileWidth) {
+  .extensions {
+    margin-top: 120px;
+    padding-bottom: 180px;
+  }
+  .extensionWrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 35px;
+  }
+}

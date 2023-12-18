@@ -1,0 +1,17 @@
+@import "../../styles/variables.scss";
+
+.container {
+  text-align: center;
+}
+
+.accordingList {
+  margin: 30px 0 50px;
+  text-align: start;
+}
+
+@media screen and (min-width: $mobileWidth) {
+  .container {
+    max-width: 530px;
+    margin: 0 auto;
+  }
+}

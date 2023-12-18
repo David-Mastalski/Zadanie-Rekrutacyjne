@@ -1,0 +1,82 @@
+@import "./styles/variables.scss";
+
+.hero {
+  display: grid;
+  margin-top: 40px;
+}
+
+.content {
+  text-align: center;
+  order: 2;
+  margin: 50px 0;
+
+  h1 {
+    color: $darkBlue;
+    font-size: 3.1rem;
+    font-weight: $boldFont;
+  }
+}
+
+.buttonsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  column-gap: 10px;
+}
+
+.imgContainer {
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+}
+
+.illustrationShadow {
+  background-color: $lightBlue;
+  border-bottom-left-radius: 120px;
+  height: 80%;
+  width: 95%;
+  position: absolute;
+  top: 20%;
+  right: -15%;
+  z-index: -2;
+}
+
+@media screen and (min-width: $mobileWidth) {
+  .hero {
+    max-width: 1100px;
+    margin: 40px auto 0;
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+
+  .content {
+    text-align: start;
+    order: 0;
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+      padding: 35px 0;
+    }
+  }
+
+  .buttonsContainer {
+    column-gap: 20px;
+    justify-content: flex-start;
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .imgContainer img {
+    transform: translateX(60px);
+  }
+
+  .illustrationShadow {
+    width: 120%;
+    top: 70px;
+    right: -55%;
+  }
+}

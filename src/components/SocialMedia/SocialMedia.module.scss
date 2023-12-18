@@ -1,0 +1,18 @@
+@import "../../styles/variables.scss";
+
+.socialMedia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+
+  &__icon:hover {
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: $mobileWidth) {
+  .socialMedia.navBar {
+    display: none;
+  }
+}

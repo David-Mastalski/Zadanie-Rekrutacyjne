@@ -1,0 +1,46 @@
+@import "../../styles/variables.scss";
+
+.itemContainer {
+  border-bottom: 1px solid $grey;
+}
+
+.question {
+  cursor: pointer;
+  padding: 15px 15px 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h5 {
+    color: $darkBlue;
+    font-weight: $boldFont;
+    font-size: 1.6rem;
+    transition: color 0.3s;
+  }
+
+  &:hover h5 {
+    color: $lightRed;
+  }
+}
+
+.expand {
+  aspect-ratio: 1;
+  background-color: transparent;
+  border: none;
+  padding: 4px;
+  transition: transform 0.3s ease-in-out;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__active {
+    transform: rotate(180deg);
+  }
+}
+
+.answer {
+  color: $grey;
+  font-size: 1.6rem;
+  padding: 10px 0 30px;
+}

@@ -1,0 +1,31 @@
+@import "../../styles/variables.scss";
+
+.footer {
+  background-color: $darkBlue;
+  padding: 40px 0;
+  text-align: center;
+
+  &__navList {
+    margin: 30px 0;
+  }
+}
+
+@media screen and (min-width: $mobileWidth) {
+  .footer {
+    padding: 25px 0;
+    &__inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__leftCol {
+      display: flex;
+      align-items: center;
+    }
+    &__navList {
+      margin: 0;
+    }
+  }
+}

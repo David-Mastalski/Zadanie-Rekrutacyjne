@@ -1,0 +1,19 @@
+@import "../../styles/variables.scss";
+
+.subHeading {
+  color: $darkBlue;
+  font-size: 2.5rem;
+  font-weight: $boldFont;
+}
+
+.subHeading,
+.subText {
+  text-align: center;
+}
+
+@media screen and (min-width: $mobileWidth) {
+  .subText {
+    max-width: 485px;
+    margin: 0 auto;
+  }
+}

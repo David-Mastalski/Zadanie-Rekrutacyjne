@@ -1,0 +1,40 @@
+@import "./styles/variables.scss";
+
+* {
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: $mainFontSize;
+  width: 100%;
+  min-height: 100dvh;
+}
+
+#root {
+  min-height: 100dvh;
+  // padding: 0 35px;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+// .page-padding {
+//   padding: 0 20px;
+// }
+
+// .pageContainer {
+//   padding: auto 20px;
+// }
